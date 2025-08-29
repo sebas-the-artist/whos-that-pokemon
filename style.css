@@ -3,6 +3,75 @@
   margin: 0;
 }
 
+/* animations */
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+@keyframes grow {
+  0% {
+    transform: scale(95%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+@keyframes grow-in {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+@keyframes drop-in {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes toss {
+  0% {
+    transform: scale(0) translateY(0);
+    opacity: 0.1;
+  }
+  25% {
+    transform: scale(25%) translateY(-30%);
+  }
+  50% {
+    transform: scale(50%) translateY(-150%);
+    opacity: 0.3;
+  }
+  75% {
+  }
+  100% {
+    transform: scale(100%) translateY(0);
+    opacity: 1;
+  }
+}
+/* NAV */
+
+nav {
+  background-image: url(assets/buncha-pokemon.png);
+}
+.poke__logo--wrapper {
+  display: flex;
+  justify-content: center;
+  animation: float 800ms ease-in-out alternate-reverse infinite;
+}
+.poke__logo {
+  animation: toss 800ms ease-in-out;
+}
+
 /* search */
 .search {
   display: flex;
