@@ -1,4 +1,30 @@
 
+
+
+async function main() {
+    const pokemon = await fetch("https://pokeapi.co/api/v2/pokemon");
+    const pokemonData = await pokemon.json();
+    const characterListEl = document.querySelector(".character-list")
+    console.log(pokemonData)
+
+characterListEl.innerHTML = pokemonData.results
+.map(
+    (character) => `<div class="character-card">
+    <div class="character-card__container">
+       <h3>Pokémons's Name</h4>
+        <p><b>power:</b>base_experience</p>
+        <p><b>type:</b> type/types</p>
+        <p><b>sprite:</b> <img src="" alt="pokémon naked" id="pokemonSprite" class="pokemon__img"></p>
+    </div>
+    </div>`
+    )
+    .join("");
+}
+
+main()
+
+
+
 async function fetchData() {
 
     const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
@@ -17,6 +43,8 @@ async function fetchData() {
         console.log(data)
     }
 }
+
+
 
 
 /*
