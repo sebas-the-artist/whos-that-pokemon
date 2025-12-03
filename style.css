@@ -116,7 +116,7 @@ nav {
   display: flex;
   align-items: center;
 
-  animation: slide-in 901ms ease-in;
+  animation: slide-in 900ms ease-in;
   background-color: none;
 }
 .search__btn--ball,
