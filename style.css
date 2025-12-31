@@ -125,7 +125,7 @@ nav {
   height: 64px;
 }
 .search__btn--ball {
-  animation: grow 401ms ease-in-out alternate-reverse infinite;
+  animation: grow 403ms ease-in-out alternate-reverse infinite;
 }
 
 .pokemon__img {
