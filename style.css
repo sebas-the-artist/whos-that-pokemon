@@ -11,8 +11,8 @@
   max-width: 1200px;
 }
 
-.row {
-}
+/* .row {
+} */
 
 /* animations */
 
@@ -147,8 +147,8 @@ nav {
 .character {
   width: 100%;
 }
-.character__card {
-}
+/* .character__card {
+} */
 .character__card--container {
   border: 8px solid blue;
   background-color: lightblue;
