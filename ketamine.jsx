@@ -14,7 +14,7 @@ class Car {
   }
 }
 const racecar = new Car("nissan", "1992");
-const cwassy = new Car("lincoln", "1982");
+const cwassy = new Car("lincoln", "1980");
 
 racecar.print();
 cwassy.print();
