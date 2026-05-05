@@ -9,7 +9,7 @@ class Car {
   }
   print() {
     console.log(
-      ` This Fuckin ${this.year} ${this.brand} Is ${this.getAge()} years old `,
+      ` This clean ass ${this.year} ${this.brand} Is ${this.getAge()} years old `,
     );
   }
 }
